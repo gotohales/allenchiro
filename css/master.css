@@ -180,7 +180,7 @@ html {
 }
 body {
   font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-  color: #555;
+  color: #3e3935;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -223,7 +223,7 @@ h3 {
   margin: 0 0 16px;
 }
 .proto-bg {
-  background-color: rgba(0,0,0,0.6);
+  background-color: #3e3935;
 }
 .full-width {
   width: 100%;
@@ -242,6 +242,9 @@ h3 {
   content: "";
   display: table;
   clear: both;
+}
+.set-width.nopadding {
+  padding: 0;
 }
 .logo {
   padding: 16px 0;
@@ -293,18 +296,70 @@ h3 {
     display: none;
   }
 }
-.splash {
-  width: 100%;
-  padding: 64px 0;
+.splash-wrapper {
+  margin: 32px 0;
+  position: relative;
 }
 @media screen and (max-width: 720px) {
-  .splash {
-    padding: 32px 0;
+  .splash-wrapper {
+    margin: 0;
+  }
+}
+.splash {
+  width: 100%;
+}
+.splash-wrapper h2 {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  color: #fff;
+  font-size: 64px;
+  width: 30%;
+  text-align: center;
+}
+/* Responsive (lol?) font sizes */
+@media screen and (max-width: 1200px) and (min-width: 1100px) {
+  .splash-wrapper h2 {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .splash-wrapper h2 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+  .splash-wrapper h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 800px) {
+  .splash-wrapper h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 700px) {
+  .splash-wrapper h2 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  .splash-wrapper h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  .splash-wrapper h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .splash-wrapper h2 {
+    font-size: 21px;
   }
 }
 .small-nav {
   text-align: center;
-  border-top: 1px solid #555;
   padding-top: 16px;
   margin-bottom: 16px;
   display: none;
@@ -322,8 +377,8 @@ h3 {
 }
 .footer {
   color: #fff;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .footer p {
   margin: 0;
