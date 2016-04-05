@@ -199,18 +199,33 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  color: #d5c6a5;
+}
+.home-page a.home-active,
+.treatments-page a.treatments-active {
+  color: #d5c6a5;
 }
 button {
-  background-color: rgba(0,0,0,0.6);
+  background-color: #3e3935;
   color: #fff;
   border: 0 none;
   padding: 8px 16px;
   min-width: 120px;
+  border: 2px solid transparent;
+}
+button:hover {
+  border: 2px solid #d5c6a5;
+}
+.home-page button.home-active,
+.treatments-page button.treatments-active {
+  border: 2px solid #d5c6a5;
 }
 p {
   margin: 0 0 16px;
   line-height: 1.5;
+}
+p.m-top {
+  margin-top: 16px;
 }
 h2 {
   font-size: 24px;
@@ -386,7 +401,8 @@ h3 {
 }
 .main-wrapper {
   position: relative;
-  min-height: 560px;
+  min-height: 768px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 800px) {
   .side-bar {
@@ -400,7 +416,15 @@ h3 {
   margin: 0;
 }
 .side-bar h3 {
-  margin-top: 16px;
+  margin-top: 40px;
+}
+.side-bar button {
+  background-color: #d5c6a5;
+  border: 1px solid transparent;
+  color: #000;
+}
+.side-bar button:hover {
+  border: 1px solid #3e3935;
 }
 .main-content {
   overflow: hidden;
@@ -454,6 +478,15 @@ h3 {
 }
 .treatments li {
   padding-left: 0;
+}
+.treatments h2 {
+  margin: 0;
+}
+.treatments h3 {
+  margin: 40px 0 0;
+}
+.treatments p {
+  margin: 16px 0 0;
 }
 
  /*# sourceMappingURL=master.css.map */

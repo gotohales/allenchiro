@@ -9,7 +9,7 @@
     <title>Allen Chiropractic Care</title><link rel='stylesheet' href='css/master.css' />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="home-page">
     <div class="main-container">
       <div class="proto-bg full-width">
         <div class="set-width">
@@ -23,8 +23,8 @@
             </li>
           </ul>
           <ul class="wide-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="/" class="home-active">Home</a></li>
+            <li><a href="treatments.html" class="treatments-active">Treatments</a></li>
           </ul>
         </div>
       </div>
@@ -34,8 +34,8 @@
         </div>
       </div>
       <div class="small-nav"><a href="/">
-          <button class="home-btn">Home</button></a><a href="treatments.html">
-          <button class="treatments-btn">Treatments</button></a></div>
+          <button class="home-btn home-active">Home</button></a><a href="treatments.html">
+          <button class="treatments-btn treatments-active">Treatments</button></a></div>
       <div class="set-width">
         <div class="main-wrapper">
           <div class="main-content">
@@ -55,8 +55,10 @@
           <div class="side-bar">
             <h2>Schedule an Appointment</h2>
             <h3>First Visit Form</h3>
-            <p>Please download and fill out this form before your first visit!</p>
-            <button class="download-btn"><i class="fa fa-file-pdf-o"></i><span>Download Form</span></button>
+            <p>Please download and fill out this form before your first visit!</p><a href="forms/Intake-Form.pdf" download>
+              <button class="download-btn"><i class="fa fa-file-pdf-o"></i><span>Download Form</span></button></a>
+            <p class="m-top">For infants, please fill out the Infant Form.</p><a href="forms/Infant-Intake-Form.pdf" download>
+              <button class="download-btn"><i class="fa fa-file-pdf-o"></i><span>Download Infant Form</span></button></a>
             <h3>Contact Information</h3>
             <div class="contact-info"><i class="fa fa-phone"></i>
               <p>435-986-1021</p>
