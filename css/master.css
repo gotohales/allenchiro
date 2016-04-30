@@ -327,7 +327,7 @@ h3 {
   position: absolute;
   right: 5%;
   top: 25%;
-  color: #fff;
+  color: #3e3935;
   font-size: 64px;
   width: 30%;
   text-align: center;
@@ -467,6 +467,10 @@ h3 {
 }
 .location ul {
   float: left;
+}
+.location iframe {
+  margin-top: 16px;
+  border: 1px solid #3e3935;
 }
 .hours {
   width: 100%;
