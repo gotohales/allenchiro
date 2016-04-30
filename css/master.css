@@ -401,7 +401,7 @@ h3 {
 }
 .main-wrapper {
   position: relative;
-  min-height: 768px;
+  min-height: 1088px;
   padding-bottom: 16px;
 }
 @media screen and (min-width: 800px) {
